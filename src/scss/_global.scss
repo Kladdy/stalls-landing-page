@@ -1,0 +1,22 @@
+// 
+// Global
+// 
+
+// Use this file to add styling to your theme
+.smab-link {
+    a {
+        // color: #ffffff;
+        color: inherit;
+        // text-decoration: none;
+        // display: inline-block;
+        // display: block;
+        // padding: 0px;
+        // margin: 0px;
+    }
+
+    a:hover {
+        color:#dddddd; 
+        // text-decoration:none; 
+        cursor:pointer;  
+    }
+}
