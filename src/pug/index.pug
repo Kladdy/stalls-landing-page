@@ -1,339 +1,300 @@
-doctype html
-html(lang='sv')
+//- index.pug
+extends layout.pug
 
-    head
+block scripts
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Små Hopp är ert alternativ för barnomsorg i Boden. Våra dagbarnvårdare är mycket erfarna och omtyckta. Vår verksamhet är i Sävast och vi ser fram emot att hjälpa er med barnomsorgen. Små Hopp i Boden drivs av Stjärnholm Medical AB.')
-        meta(name='author', content='')
+block content
 
-        title Små Hopp - Dagbarnvård i hemmet
+    // Masthead
+    header.masthead
+        .container.position-relative
+            .row.justify-content-center
+                .col-xl-6
+                    .text-center.text-white
+                        // Page heading
+                        h3.mb-5.smab-link Små&nbsp;Hopp&nbsp;i&nbsp;Boden driver barnomsorg. Våra dagbarnvårdare är mycket erfarna och omtyckta. Vår verksamhet är i Sävast och vi ser fram emot att hjälpa er med barnomsorgen. Små&nbsp;Hopp&nbsp;i&nbsp;Boden drivs av #[a(href="https://stjarnholmmedical.se") Stjärnholm Medical AB].
 
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    // Infotext
+    section.features-icons.text-center
+        .container
+            h2.mb-4 Om oss
 
-        // Bootstrap icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css', rel='stylesheet', type='text/css')
+            .row.justify-content-around
+                .col-lg-4
+                    .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").fas.fa-child.m-auto.text-primary
+                        h4 Företaget
+                        p.lead
+                            | Små Hopp i Boden är ett företag som har arbetat med dagbarnvård i hemmet sedan 2012. Vi startade i Sävast med fyra mycket omtyckta och erfarna dagmammor. Vi har F-skattebevis och ansvarsförsäkringar.
+                .col-lg-4
+                    .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").fas.fa-hand-holding-heart.m-auto.text-primary
+                        h4 Samverkan
+                        p.lead 
+                            | Vi samarbetar med föräldrar och lokala företag för att erbjuda era barn en trygg och lärorik barnomsorg. Vi arbetar i par med schemaläggning och gör olika aktiviteter tillsammans med samtliga dagmammor, exempelvis idrott.
+                .col-lg-4
+                    .features-icons-item.mx-auto.mb-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").fas.fa-shapes.m-auto.text-primary
+                        h4 Logistik
+                        p.lead
+                            | Vi har kollektivavtal med Svenska kommunalarbetareförbundet och Lärarförbundet. Barnen är försäkrade i den kommunala olycksfallsförsäkringen. Vi tillämpar maxtaxa och alla är välkomna att söka plats hos oss. Vi har en egen kölista, skiljd från kommunens.
 
-        // FontAwesome JS
-        script(src="https://kit.fontawesome.com/d859ded2d4.js" crossorigin="anonymous")
+    // Infotext
+    section.features-icons.bg-light.text-center
+        .container
+            h2.mb-4 Vår vision
+            p.lead.mb-3.pb-3
+                | Vi vill erbjuda ett alternativ för föräldrarna där barnens uppväxt är viktigast av allt och ska ske i en lugn, harmonisk, trygg och lärande miljö. Barnen vistas mycket ute i skog och mark och får en trygg vistelse hos oss.
+            .row.justify-content-around
+                .col-lg-3
+                    .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").fas.fa-dove.m-auto.text-primary
+                        h4 Naturen
+                        p.lead
+                            | Vi är ute ofta och mycket och tittar i skogen, lär oss om djur och växter och kretsloppet. Ibland hälsar Mulle på. Vi lär oss hitta när vi är vilse, och när vi inte är ute är vi på gympa, inne i stan på studiebesök eller på lekplatser. Opalen är ett favoritställe att fika på.
+                .col-lg-3
+                    .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").bi.bi-person-check-fill.m-auto.text-primary
+                        h4 Föräldrainflytande
+                        p.lead 
+                            | Att föräldrar i Boden ska kunna välja barnomsorg tycker vi är en självklarhet. Alla barn kan av olika anledningar inte gå på större avdelningar med många barn, eller så vill föräldrar ha mer inflytande och en närmare, tryggare kontakt. Alla är välkomna till Små Hopp i Boden. Boka gärna in ett besök och se hur vi arbetar.
+                .col-lg-3
+                    .features-icons-item.mx-auto.mb-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").fas.fa-equals.m-auto.text-primary
+                        h4 Människors lika värde
+                        p.lead
+                            | Små Hopp i Boden har ingen koppling till någon religiös, ideologisk eller politisk verksamhet. Vi anser att alla människor är lika mycket värda och förtjänar respekt. Vi samarbetar med Friluftsfrämjandet och erbjuder medlemsskap i Friluftsfrämjandet Boden.
+                .col-lg-3
+                    .features-icons-item.mx-auto.mb-0.mb-lg-3
+                        .features-icons-icon.d-flex
+                            i(style="font-size: 70").bi.bi-check2-circle.m-auto.text-primary
+                        h4 Valfrihet
+                        p.lead
+                            | Den enskilt största förbättringen för föräldrar och barn i Boden är möjligheten att välja dagbarnvårdare. Valfrihet behövs utifrån det grundläggande faktum att alla människor är olika samt har olika förutsättningar och behov.
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+    //- // Icons Grid
+    //- section.features-icons.bg-light.text-center
+    //-     .container
+    //-         h2.mb-2 Utlåtanden och intyg
+    //-         p.lead.mb-3.pb-3
+    //-             | Hos oss kan du få hjälp vid behov av olika typer av medicinska utlåtanden och intyg, exempelvis inom
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+    //-         .row.justify-content-around
+    //-             .col-lg-2.col-md-4
+    //-                 .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+    //-                     .features-icons-icon.d-flex
+    //-                         i(style="font-size: 70").fas.fa-taxi.m-auto.text-primary
+    //-                     h4 Körkortstillstånd, alla klasser
+    //-             .col-lg-2.col-md-4
+    //-                 .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+    //-                     .features-icons-icon.d-flex
+    //-                         i(style="font-size: 70").fas.fa-swimming-pool.m-auto.text-primary
+    //-                     h4 Yrkesdykning &amp; sportdykning
+    //-             .col-lg-2.col-md-4
+    //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
+    //-                     .features-icons-icon.d-flex
+    //-                         i(style="font-size: 70").fas.fa-subway.m-auto.text-primary
+    //-                     h4 Tågförare &amp; motsvarande
+    //-             .col-lg-2.col-md-4
+    //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
+    //-                     .features-icons-icon.d-flex
+    //-                         i(style="font-size: 70").fas.fa-heartbeat.m-auto.text-primary
+    //-                     h4 Försäkringar, liv/pension
+    //-             .col-lg-2.col-md-4
+    //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
+    //-                     .features-icons-icon.d-flex
+    //-                         i(style="font-size: 70").fas.fa-horse.m-auto.text-primary
+    //-                     h4 Travlicenser
 
-        script(src="http://code.jquery.com/jquery-2.1.4.min.js")
-        script(src="js/scripts.js")
+    //- // Image Showcases
+    //- section.showcase
+    //-     .container-fluid.p-0
+    //-         .row.g-0
+    //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock1.jpg');")
+    //-             .col-lg-6.order-lg-1.my-auto.showcase-text
+    //-                 h2 Läkarresurser
+    //-                 p.lead.mb-0
+    //-                     | Vi erbjuder läkarresurser inom barn- och ungdomsmedicin, skolhälsovård, infektionsmedicin, företagshälsovård, dykmedicin och Event Medicine.
+    //-         .row.g-0
+    //-             .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock3.jpg');")
+    //-             .col-lg-6.my-auto.showcase-text
+    //-                 h2 Skolläkartjänster
+    //-                 p.lead.mb-0
+    //-                     | Mångårig erfarenhet av skolhälsovårdsarbete, skolläkarinsatser i Bodens Kommun, Kalix kommun, Luleå kommun, Kiruna kommun, Pajala kommun och Älvsby kommun samt på friskolor i Boden, Luleå, Skellefteå, Kiruna och Piteå. Vi har även uppdrag i Stockholmsregionen sedan 2012. Vi har resurser för fler uppdrag inom skolhälsovården tack vare medarbetare med lång erfarenhet.
+    //-         .row.g-0
+    //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock5.jpg');")
+    //-             .col-lg-6.order-lg-1.my-auto.showcase-text
+    //-                 h2 Allmänna hälsoundersökningar samt intyg för juridiska processer
+    //-                 p.lead.mb-0
+    //-                     | Förutom läkarresurser inom specialiteterna ovan erbjuder vi möjlighet till utbildningar inom dessa områden. Vi kan skräddarsy föreläsningar efter behov. Vi har erfarenhet av olika datajournalsystem, bland annat VAS, Profdoc JIII, Profdoc Vision, Mellior, PMO, BMS, Take Care och stor vana vid journalföring på data.
+    //-         .row.g-0
+    //-             .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock4.jpg');")
+    //-             .col-lg-6.my-auto.showcase-text
+    //-                 h2 Utbildningar
+    //-                 p.lead.mb-0
+    //-                     | Vi erbjuder utbildningar och föreläsningar i många områden inom hälso- och sjukvård samt medicinska utbildningar, men även handledarutbildningar. Vi föreläser på vårdhögskolor och universitet samt i privata företag och organisationer.
+    //-         .row.g-0
+    //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock2.jpg');")
+    //-             .col-lg-6.order-lg-1.my-auto.showcase-text
+    //-                 h2 Om oss
+    //-                 p.lead.mb-0
+    //-                     | Stjärnholm Medical AB har F-skattsedel och ansvarsförsäkringar enligt Läkarförbundets rekommendation för privatläkare.#[br]#[br]Stjärnholm Medical AB strävar efter att minimera sin miljöpåverkan genom både lång- och kortsiktig planering. Företaget har sitt säte i Bodens kommun, Mejselvägen 11, 961 38 Boden.
 
-    body
-        include navbar 
-        //- // Navigation
-        //- nav.navbar.navbar-light.bg-light.static-top
-        //-     .container
-        //-         //- a.navbar-brand(href='') Små Hopp - Dagbarnvård i hemmet
-        //-         a.navbar-brand(href='') 
-        //-             img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50" )
-        //-         //- a.btn.btn-primary(href='#signup') Kontakta oss 
-        //-         a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+    - current_year = (new Date()).getFullYear();
+    - eva_years = (current_year - 1992).toString().slice(-2)
+    - kristina_years = (current_year - 1997).toString().slice(-2)
+    - susanne_years = (current_year - 1992).toString().slice(-2)
+    - eva_maria_years = (current_year - 2004).toString().slice(-2)
 
-        // Masthead
-        header.masthead
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        .text-center.text-white
-                            // Page heading
-                            h3.mb-5.smab-link Små&nbsp;Hopp&nbsp;i&nbsp;Boden driver barnomsorg. Våra dagbarnvårdare är mycket erfarna och omtyckta. Vår verksamhet är i Sävast och vi ser fram emot att hjälpa er med barnomsorgen. Små&nbsp;Hopp&nbsp;i&nbsp;Boden drivs av #[a(href="https://stjarnholmmedical.se") Stjärnholm Medical AB].
+    // People
+    section.testimonials.text-center
+        .container
+            h2.mb-2 Personal
+            p.lead.mb-3.pb-3
+                | Vilka är vi som arbetar med Små Hopp?
+            .row.mt-3.pt-3 
+                .col-lg-3
+                    .testimonial-item.mx-auto.mb-5.mb-lg-0
+                        img.img-fluid.mb-3(src='assets/img/homepage/Kid_A.png', alt='')
+                        h5 Eva Jönsson
+                        p.text-muted.small Sävastön
+                        p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{eva_years} år. Jag är utbildad ledare inom friluftsfrämjandets Barnverksamhet. Min barngrupp består av 6 platser i åldrarna 1-6 år.#[br]#[br]Jag erbjuder barnen en trygg och lärorik barnomsorg i hemmiljö. Lek och aktiviteter inomhus och utomhus där jag prioriterar uteverksamheten. 
+                        br
+                        i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
+                        | Rökfritt
+                        br
+                        i.fas.fa-check.m-auto.text-primary.text-primary-mr-2
+                        | Djurfritt 
+                .col-lg-3
+                    .testimonial-item.mx-auto.mb-5.mb-lg-0
+                        img.img-fluid.mb-3(src='assets/img/homepage/Kid_B.png', alt='')
+                        h5 Kristina Rahkola
+                        p.text-muted.small Sävast
+                        p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{kristina_years} år. Barngruppen består av 6 platser i åldrarna 1-6 år.#[br]#[br]Jag erbjuder barnen en trygg miljö som samtidigt utmanar och lockar till lek och aktiviteter både inomhus och utomhus. Prioriterar uteverksamheten.
+                        br
+                        i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
+                        | Rökfritt
+                        br
+                        i.fas.fa-check.m-auto.text-primary.text-primary-mr-2
+                        | Djurfritt 
+                .col-lg-3
+                    .testimonial-item.mx-auto.mb-5.mb-lg-0
+                        img.img-fluid.mb-3(src='assets/img/homepage/Kid_C.png', alt='')
+                        h5 Susanne Stenqvist 
+                        p.text-muted.small Sävast
+                        p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{susanne_years} år. Utbildad fritidspedagog och förskollärare. Barngruppen består av 6 platser i åldarna 1-6 år.#[br]#[br]Har hemmet som grund, där djur och natur med mycket lek är mina byggstenar.
+                        br
+                        i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
+                        | Rökfritt
+                        br
+                        i.fas.fa-paw.m-auto.text-primary.text-primary-mr-2
+                        | Djur finns i hemmet
+                .col-lg-3
+                    .testimonial-item.mx-auto.mb-5.mb-lg-0
+                        img.img-fluid.mb-3(src='assets/img/homepage/Kid_D.png', alt='')
+                        h5 Eva-Maria Björn
+                        p.text-muted.small Sävast
+                        p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{eva_maria_years} år. Tidigare jobbat i Umeå Kommun. Barngruppen består av 6 platser i åldrarna 1-6 år.#[br]#[br]Har hemmet som grund. Pyssel, sång och natur med mycket lek är mina byggstenar.
+                        br
+                        i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
+                        | Rökfritt
+                        br
+                        i.fas.fa-paw.m-auto.text-primary.text-primary-mr-2
+                        | Djur finns i hemmet
 
-        // Infotext
-        section.features-icons.text-center
-            .container
-                h2.mb-4 Om oss
+    // Call to Action
+    section#signup.call-to-action.text-white.text-center
+        .container.position-relative
+            .row.justify-content-center
+                .col-xl-6
+                    h2.mb-4 Vi är stolta sponsorer av
+                    ul(style='list-style: none;').mb-2
+                        li Sävast AIF ungdomsfotboll
+                        li Bodens Ridklubb
 
-                .row.justify-content-around
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").fas.fa-child.m-auto.text-primary
-                            h4 Företaget
-                            p.lead
-                                | Små Hopp i Boden är ett företag som har arbetat med dagbarnvård i hemmet sedan 2012. Vi startade i Sävast med fyra mycket omtyckta och erfarna dagmammor. Vi har F-skattebevis och ansvarsförsäkringar.
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").fas.fa-hand-holding-heart.m-auto.text-primary
-                            h4 Samverkan
-                            p.lead 
-                                | Vi samarbetar med föräldrar och lokala företag för att erbjuda era barn en trygg och lärorik barnomsorg. Vi arbetar i par med schemaläggning och gör olika aktiviteter tillsammans med samtliga dagmammor, exempelvis idrott.
-                    .col-lg-4
-                        .features-icons-item.mx-auto.mb-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").fas.fa-shapes.m-auto.text-primary
-                            h4 Logistik
-                            p.lead
-                                | Vi har kollektivavtal med Svenska kommunalarbetareförbundet och Lärarförbundet. Barnen är försäkrade i den kommunala olycksfallsförsäkringen. Vi tillämpar maxtaxa och alla är välkomna att söka plats hos oss. Vi har en egen kölista, skiljd från kommunens.
+    // Contact us
+    section.features-icons.text-center
+        .container
+            h2.mb-2 Kontakta oss
+            p.font-weight-light.mb-3.pb-3 
+                i.bi-telephone.m-auto.text-primary-mr-2
+                | 0921-361 830
+                br
+                i.bi-envelope.m-auto.text-primary-mr-2
+                a(href='mailto:info@smahopp.se') info@smahopp.se
+                br
+                i.bi-geo-alt.m-auto.text-primary-mr-2
+                | Mejselvägen 11, 961 38 Boden
 
-        // Infotext
-        section.features-icons.bg-light.text-center
-            .container
-                h2.mb-4 Vår vision
-                p.lead.mb-3.pb-3
-                    | Vi vill erbjuda ett alternativ för föräldrarna där barnens uppväxt är viktigast av allt och ska ske i en lugn, harmonisk, trygg och lärande miljö. Barnen vistas mycket ute i skog och mark och får en trygg vistelse hos oss.
-                .row.justify-content-around
-                    .col-lg-3
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").fas.fa-dove.m-auto.text-primary
-                            h4 Naturen
-                            p.lead
-                                | Vi är ute ofta och mycket och tittar i skogen, lär oss om djur och växter och kretsloppet. Ibland hälsar Mulle på. Vi lär oss hitta när vi är vilse, och när vi inte är ute är vi på gympa, inne i stan på studiebesök eller på lekplatser. Opalen är ett favoritställe att fika på.
-                    .col-lg-3
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").bi.bi-person-check-fill.m-auto.text-primary
-                            h4 Föräldrainflytande
-                            p.lead 
-                                | Att föräldrar i Boden ska kunna välja barnomsorg tycker vi är en självklarhet. Alla barn kan av olika anledningar inte gå på större avdelningar med många barn, eller så vill föräldrar ha mer inflytande och en närmare, tryggare kontakt. Alla är välkomna till Små Hopp i Boden. Boka gärna in ett besök och se hur vi arbetar.
-                    .col-lg-3
-                        .features-icons-item.mx-auto.mb-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").fas.fa-equals.m-auto.text-primary
-                            h4 Människors lika värde
-                            p.lead
-                                | Små Hopp i Boden har ingen koppling till någon religiös, ideologisk eller politisk verksamhet. Vi anser att alla människor är lika mycket värda och förtjänar respekt. Vi samarbetar med Friluftsfrämjandet och erbjuder medlemsskap i Friluftsfrämjandet Boden.
-                    .col-lg-3
-                        .features-icons-item.mx-auto.mb-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i(style="font-size: 70").bi.bi-check2-circle.m-auto.text-primary
-                            h4 Valfrihet
-                            p.lead
-                                | Den enskilt största förbättringen för föräldrar och barn i Boden är möjligheten att välja dagbarnvårdare. Valfrihet behövs utifrån det grundläggande faktum att alla människor är olika samt har olika förutsättningar och behov.
+    // Modal for Documents
+    -
+        var documents_list = [["Avgifter Små Hopp i Boden 2021", "AvgifterSmaHoppiBoden2021.pdf"],
+                                ["Avtal dagbarnvårdare", "avtal_dagbarnvardare.pdf"],
+                                ["Ansökan till familjedaghemsplats", "Familjedaghemsplats.pdf"],
+                                ["Till föräldrar med barn placerade hos Små Hopp familjedaghem", "Foraldrar.pdf"],
+                                ["Schema familjedaghem", "Grundschema.pdf"],
+                                ["Inkomstunderlag", "inkomstunderlag.pdf"],
+                                ["Olycksfallsförsäkring", "BodenForsakringsbeskedkommunolycksfall.pdf"],
+                                //- ["Information om Personuppgiftslagen och Dataskyddsförordningen GDPR", "Bil-1-Info-om-GDPR.pdf"],
+                                ["Information om tillfällig föräldrapenning", "SmaHoppVAB.pdf"],
+                                ["Föräldraenkät", "ForaldraenkatSmaHopp.pdf"],
+                                ["Kostintyg", "KostintygSmaHopp.pdf"],
+                                ["Uppsägning av plats", "UppsagningplatsSmaHopp.pdf"],
+                                ["Riktlinjer", "Riktlinjer_och_avgifter_kommunal_förskola_och_fritidshem_20160101.pdf"],
+                                ["Handlingsplan KRIS", "SmåHoppHandlingsplanKRIS.pdf"],
+                                ["Rutiner vid misstanke om att barn far illa", "Rutiner_vid_misstanke_om_att_barn_far_illaSMAB.pdf"],
+                                ["Ändring av vistelsetid", "Små-Hopp-i-Boden-ändring-av-vistelsetid.pdf"],
+                                ]
+        var documents_list_sorted = documents_list.sort()
 
-        //- // Icons Grid
-        //- section.features-icons.bg-light.text-center
-        //-     .container
-        //-         h2.mb-2 Utlåtanden och intyg
-        //-         p.lead.mb-3.pb-3
-        //-             | Hos oss kan du få hjälp vid behov av olika typer av medicinska utlåtanden och intyg, exempelvis inom
-
-        //-         .row.justify-content-around
-        //-             .col-lg-2.col-md-4
-        //-                 .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-        //-                     .features-icons-icon.d-flex
-        //-                         i(style="font-size: 70").fas.fa-taxi.m-auto.text-primary
-        //-                     h4 Körkortstillstånd, alla klasser
-        //-             .col-lg-2.col-md-4
-        //-                 .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-        //-                     .features-icons-icon.d-flex
-        //-                         i(style="font-size: 70").fas.fa-swimming-pool.m-auto.text-primary
-        //-                     h4 Yrkesdykning &amp; sportdykning
-        //-             .col-lg-2.col-md-4
-        //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
-        //-                     .features-icons-icon.d-flex
-        //-                         i(style="font-size: 70").fas.fa-subway.m-auto.text-primary
-        //-                     h4 Tågförare &amp; motsvarande
-        //-             .col-lg-2.col-md-4
-        //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
-        //-                     .features-icons-icon.d-flex
-        //-                         i(style="font-size: 70").fas.fa-heartbeat.m-auto.text-primary
-        //-                     h4 Försäkringar, liv/pension
-        //-             .col-lg-2.col-md-4
-        //-                 .features-icons-item.mx-auto.mb-0.mb-lg-3
-        //-                     .features-icons-icon.d-flex
-        //-                         i(style="font-size: 70").fas.fa-horse.m-auto.text-primary
-        //-                     h4 Travlicenser
-
-        //- // Image Showcases
-        //- section.showcase
-        //-     .container-fluid.p-0
-        //-         .row.g-0
-        //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock1.jpg');")
-        //-             .col-lg-6.order-lg-1.my-auto.showcase-text
-        //-                 h2 Läkarresurser
-        //-                 p.lead.mb-0
-        //-                     | Vi erbjuder läkarresurser inom barn- och ungdomsmedicin, skolhälsovård, infektionsmedicin, företagshälsovård, dykmedicin och Event Medicine.
-        //-         .row.g-0
-        //-             .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock3.jpg');")
-        //-             .col-lg-6.my-auto.showcase-text
-        //-                 h2 Skolläkartjänster
-        //-                 p.lead.mb-0
-        //-                     | Mångårig erfarenhet av skolhälsovårdsarbete, skolläkarinsatser i Bodens Kommun, Kalix kommun, Luleå kommun, Kiruna kommun, Pajala kommun och Älvsby kommun samt på friskolor i Boden, Luleå, Skellefteå, Kiruna och Piteå. Vi har även uppdrag i Stockholmsregionen sedan 2012. Vi har resurser för fler uppdrag inom skolhälsovården tack vare medarbetare med lång erfarenhet.
-        //-         .row.g-0
-        //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock5.jpg');")
-        //-             .col-lg-6.order-lg-1.my-auto.showcase-text
-        //-                 h2 Allmänna hälsoundersökningar samt intyg för juridiska processer
-        //-                 p.lead.mb-0
-        //-                     | Förutom läkarresurser inom specialiteterna ovan erbjuder vi möjlighet till utbildningar inom dessa områden. Vi kan skräddarsy föreläsningar efter behov. Vi har erfarenhet av olika datajournalsystem, bland annat VAS, Profdoc JIII, Profdoc Vision, Mellior, PMO, BMS, Take Care och stor vana vid journalföring på data.
-        //-         .row.g-0
-        //-             .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock4.jpg');")
-        //-             .col-lg-6.my-auto.showcase-text
-        //-                 h2 Utbildningar
-        //-                 p.lead.mb-0
-        //-                     | Vi erbjuder utbildningar och föreläsningar i många områden inom hälso- och sjukvård samt medicinska utbildningar, men även handledarutbildningar. Vi föreläser på vårdhögskolor och universitet samt i privata företag och organisationer.
-        //-         .row.g-0
-        //-             .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/homepage/stock2.jpg');")
-        //-             .col-lg-6.order-lg-1.my-auto.showcase-text
-        //-                 h2 Om oss
-        //-                 p.lead.mb-0
-        //-                     | Stjärnholm Medical AB har F-skattsedel och ansvarsförsäkringar enligt Läkarförbundets rekommendation för privatläkare.#[br]#[br]Stjärnholm Medical AB strävar efter att minimera sin miljöpåverkan genom både lång- och kortsiktig planering. Företaget har sitt säte i Bodens kommun, Mejselvägen 11, 961 38 Boden.
-
-        - current_year = (new Date()).getFullYear();
-        - eva_years = (current_year - 1992).toString().slice(-2)
-        - kristina_years = (current_year - 1997).toString().slice(-2)
-        - susanne_years = (current_year - 1992).toString().slice(-2)
-        - eva_maria_years = (current_year - 2004).toString().slice(-2)
-
-        // People
-        section.testimonials.text-center
-            .container
-                h2.mb-2 Personal
-                p.lead.mb-3.pb-3
-                    | Vilka är vi som arbetar med Små Hopp?
-                .row.mt-3.pt-3 
-                    .col-lg-3
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.mb-3(src='assets/img/homepage/Kid_A.png', alt='')
-                            h5 Eva Jönsson
-                            p.text-muted.small Sävastön
-                            p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{eva_years} år. Jag är utbildad ledare inom friluftsfrämjandets Barnverksamhet. Min barngrupp består av 6 platser i åldrarna 1-6 år.#[br]#[br]Jag erbjuder barnen en trygg och lärorik barnomsorg i hemmiljö. Lek och aktiviteter inomhus och utomhus där jag prioriterar uteverksamheten. 
+    #DocumentsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='Documents Modal' aria-hidden='true')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    h5#DocumentsModal.modal-title Dokument
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Stäng')
+                .modal-body
+                    ul.list-inline
+                        each document in documents_list_sorted
+                            li.list-inline-item.pb-2
+                                a(href="assets/documents/" + document[1], target="_blank") 
+                                    i.bi-filetype-pdf.m-auto.text-primary-mr-2
+                                    = document[0]  
                             br
-                            i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
-                            | Rökfritt
-                            br
-                            i.fas.fa-check.m-auto.text-primary.text-primary-mr-2
-                            | Djurfritt 
-                    .col-lg-3
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.mb-3(src='assets/img/homepage/Kid_B.png', alt='')
-                            h5 Kristina Rahkola
-                            p.text-muted.small Sävast
-                            p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{kristina_years} år. Barngruppen består av 6 platser i åldrarna 1-6 år.#[br]#[br]Jag erbjuder barnen en trygg miljö som samtidigt utmanar och lockar till lek och aktiviteter både inomhus och utomhus. Prioriterar uteverksamheten.
-                            br
-                            i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
-                            | Rökfritt
-                            br
-                            i.fas.fa-check.m-auto.text-primary.text-primary-mr-2
-                            | Djurfritt 
-                    .col-lg-3
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.mb-3(src='assets/img/homepage/Kid_C.png', alt='')
-                            h5 Susanne Stenqvist 
-                            p.text-muted.small Sävast
-                            p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{susanne_years} år. Utbildad fritidspedagog och förskollärare. Barngruppen består av 6 platser i åldarna 1-6 år.#[br]#[br]Har hemmet som grund, där djur och natur med mycket lek är mina byggstenar.
-                            br
-                            i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
-                            | Rökfritt
-                            br
-                            i.fas.fa-paw.m-auto.text-primary.text-primary-mr-2
-                            | Djur finns i hemmet
-                    .col-lg-3
-                        .testimonial-item.mx-auto.mb-5.mb-lg-0
-                            img.img-fluid.mb-3(src='assets/img/homepage/Kid_D.png', alt='')
-                            h5 Eva-Maria Björn
-                            p.text-muted.small Sävast
-                            p.font-weight-light.mb-0 Har arbetat som dagbarnvårdare i #{eva_maria_years} år. Tidigare jobbat i Umeå Kommun. Barngruppen består av 6 platser i åldrarna 1-6 år.#[br]#[br]Har hemmet som grund. Pyssel, sång och natur med mycket lek är mina byggstenar.
-                            br
-                            i.fas.fa-smoking-ban.m-auto.text-primary.text-primary-mr-2
-                            | Rökfritt
-                            br
-                            i.fas.fa-paw.m-auto.text-primary.text-primary-mr-2
-                            | Djur finns i hemmet
-
-        // Call to Action
-        section#signup.call-to-action.text-white.text-center
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        h2.mb-4 Vi är stolta sponsorer av
-                        ul(style='list-style: none;').mb-2
-                            li Sävast AIF ungdomsfotboll
-                            li Bodens Ridklubb
-
-        // Contact us
-        section.features-icons.text-center
-            .container
-                h2.mb-2 Kontakta oss
-                p.font-weight-light.mb-3.pb-3 
-                    i.bi-telephone.m-auto.text-primary-mr-2
-                    | 0921-361 830
-                    br
-                    i.bi-envelope.m-auto.text-primary-mr-2
-                    a(href='mailto:info@smahopp.se') info@smahopp.se
-                    br
-                    i.bi-geo-alt.m-auto.text-primary-mr-2
-                    | Mejselvägen 11, 961 38 Boden
-
-        // Modal for Documents
-        -
-            var documents_list = [["Avgifter Små Hopp i Boden 2021", "AvgifterSmaHoppiBoden2021.pdf"],
-                                    ["Avtal dagbarnvårdare", "avtal_dagbarnvardare.pdf"],
-                                    ["Ansökan till familjedaghemsplats", "Familjedaghemsplats.pdf"],
-                                    ["Till föräldrar med barn placerade hos Små Hopp familjedaghem", "Foraldrar.pdf"],
-                                    ["Schema familjedaghem", "Grundschema.pdf"],
-                                    ["Inkomstunderlag", "inkomstunderlag.pdf"],
-                                    ["Olycksfallsförsäkring", "BodenForsakringsbeskedkommunolycksfall.pdf"],
-                                    //- ["Information om Personuppgiftslagen och Dataskyddsförordningen GDPR", "Bil-1-Info-om-GDPR.pdf"],
-                                    ["Information om tillfällig föräldrapenning", "SmaHoppVAB.pdf"],
-                                    ["Föräldraenkät", "ForaldraenkatSmaHopp.pdf"],
-                                    ["Kostintyg", "KostintygSmaHopp.pdf"],
-                                    ["Uppsägning av plats", "UppsagningplatsSmaHopp.pdf"],
-                                    ["Riktlinjer", "Riktlinjer_och_avgifter_kommunal_förskola_och_fritidshem_20160101.pdf"],
-                                    ["Handlingsplan KRIS", "SmåHoppHandlingsplanKRIS.pdf"],
-                                    ["Rutiner vid misstanke om att barn far illa", "Rutiner_vid_misstanke_om_att_barn_far_illaSMAB.pdf"],
-                                    ["Ändring av vistelsetid", "Små-Hopp-i-Boden-ändring-av-vistelsetid.pdf"],
-                                    ]
-            var documents_list_sorted = documents_list.sort()
-
-        #DocumentsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='Documents Modal' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#DocumentsModal.modal-title Dokument
-                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Stäng')
-                    .modal-body
-                        ul.list-inline
-                            each document in documents_list_sorted
-                                li.list-inline-item.pb-2
-                                    a(href="assets/documents/" + document[1], target="_blank") 
-                                        i.bi-filetype-pdf.m-auto.text-primary-mr-2
-                                        = document[0]  
-                                br
 
 
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Stäng
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Stäng
 
 
-        // Documents button
-        section.features-icons.bg-light.text-center
-            .container
-                h2.mb-2 Dokument
-                p.lead.mb-3.pb-3
-                    | Letar du efter dokument som är kopplade till verksamheten? Klicka på knappen nedan.
-                a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
-       
+    // Documents button
+    section.features-icons.bg-light.text-center
+        .container
+            h2.mb-2 Dokument
+            p.lead.mb-3.pb-3
+                | Letar du efter dokument som är kopplade till verksamheten? Klicka på knappen nedan.
+            a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
+    
 
-        #carouselExampleSlidesOnly.carousel.slide.carousel-fade(data-bs-ride='carousel')
-            .carousel-inner
-                .carousel-item.active(data-mdb-interval='1000')
-                    img.d-block.w-100(src='assets/img/homepage/timthumb1.jpeg' alt='...')
-                .carousel-item(data-mdb-interval='1000')
-                    img.d-block.w-100(src='assets/img/homepage/timthumb2.jpeg' alt='...')
-                .carousel-item(data-mdb-interval='1000')
-                    img.d-block.w-100(src='assets/img/homepage/timthumb3.jpeg' alt='...')
-                .carousel-item(data-mdb-interval='1000')
-                    img.d-block.w-100(src='assets/img/homepage/timthumb4.jpeg' alt='...')
+    #carouselExampleSlidesOnly.carousel.slide.carousel-fade(data-bs-ride='carousel')
+        .carousel-inner
+            .carousel-item.active(data-mdb-interval='1000')
+                img.d-block.w-100(src='assets/img/homepage/timthumb1.jpeg' alt='...')
+            .carousel-item(data-mdb-interval='1000')
+                img.d-block.w-100(src='assets/img/homepage/timthumb2.jpeg' alt='...')
+            .carousel-item(data-mdb-interval='1000')
+                img.d-block.w-100(src='assets/img/homepage/timthumb3.jpeg' alt='...')
+            .carousel-item(data-mdb-interval='1000')
+                img.d-block.w-100(src='assets/img/homepage/timthumb4.jpeg' alt='...')
 
 
-                    
-        // Footer
-        include footer
-        
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+                
 
-        // Core theme JS
-        script(src='js/scripts.js')
+    
+    
