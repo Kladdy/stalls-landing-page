@@ -1,18 +1,36 @@
-nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
+-
+    var nav_entries_list = [["Hem", "/"],
+                            
+                            ["Sålda&nbsp;föl", "salda-fol.html"],
+                            ["Vårt&nbsp;första&nbsp;föl", "forsta-fol.html"],
+                            ["Våra&nbsp;avelsston", "vara-avelsston.html"],
+                            ["Tidigare&nbsp;avelsston", "tidigare-avelsston.html"],
+                            ["Boxplats", "boxplats.html"],
+                            ["Stallbilder", "stallbilder.html"],
+                            ["Sommarminnen", "sommarminnen.html"],
+                            ["Brooklyn&nbsp;BC", "brooklyn-bc.html"],
+                            //- ["Qui-Qui", "qui-qui.html"],
+                            //- ["Lacombe", "lacombe.html"],
+                            ["Bakgrund", "bakgrund.html"],
+                            ["Kontakt", "kontakt.html"],
+                            ]
+
+//- nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
+nav(class="navbar navbar-dark bg-dark")
     .container-fluid
         a(class="navbar-brand" style="font-size: 25px !important;" height="25px" href="/") 
             img.mr-2(class="d-inline-block align-middle" src="assets/img/stalls_icon.png")
             | Stall Stjärnholm
-        button.ml-auto(class="navbar-toggler" type="button" 
+        button.ml-auto(class="navbar-toggler" type="button" style="border-color: #F8F8F8;"
                         data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" 
                         aria-label="Toggle navigation")
             span(class="navbar-toggler-icon")
         div(class="collapse navbar-collapse" id="navbarNavAltMarkup")
             //- .mr-auto.div(class="navbar-nav")
-            a(class="nav-link" href="/") Hem
-            a(class="nav-link" href="#") Features
-            a(class="nav-link" href="kontakt.html") Kontakt
+            each nav_entry in nav_entries_list
+                a(class="nav-link" style="white-space: pre-wrap;" href=nav_entry[1])!= nav_entry[0]
+
 
 
 //- // Navigation
@@ -23,3 +41,7 @@ nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
 //-             img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50" )
 //-         //- a.btn.btn-primary(href='#signup') Kontakta oss 
 //-         a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+
+
+                    
+
