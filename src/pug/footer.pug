@@ -51,26 +51,22 @@
             .modal-footer
                 button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Stäng
 
-footer.footer.bg-light
+footer.footer.bg-dark
     .container
         .row
             .col-lg-6.h-100.text-center.text-lg-start.my-auto
                 ul.list-inline.mb-2
                     li.list-inline-item
                         a(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
-                    li.list-inline-item ⋅
+                    li.list-inline-item.text-light ⋅
                     li.list-inline-item
                         a(data-target='#IntegrityModal' data-toggle='modal' href='#Integrity' data-bs-toggle='modal' data-bs-target='#IntegrityModal') Integritetspolicy
-                    li.list-inline-item ⋅
+                    li.list-inline-item.text-light ⋅
                     li.list-inline-item
                         a(data-target='#GDPRModal' data-toggle='modal' href='#GDPR' data-bs-toggle='modal' data-bs-target='#GDPRModal') GDPR
-                    li.list-inline-item ⋅
-                    li.list-inline-item
-                        a(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
-
 
                 - current_year = (new Date()).getFullYear();
-                p.text-muted.small.mb-4.mb-lg-0 &copy; Stjärnholm Equestrian AB #{current_year}. Alla rättigheter förbehålles.#[br]Hemsidan underhålls av #[a(href="https://sigfrid.me") Sigfrid Stjärnholm].
+                p.text-light.small.mb-4.mb-lg-0 &copy; Stjärnholm Equestrian AB #{current_year}. Alla rättigheter förbehålles.#[br]Hemsidan underhålls av #[a(href="https://sigfrid.me") Sigfrid Stjärnholm].
             .col-lg-6.h-100.text-center.text-lg-end.my-auto
                 ul.list-inline.mb-0
                     li.list-inline-item.me-4
