@@ -3,6 +3,7 @@
 
 // Can also use  $() instead of $(document).ready()
 $(document).ready(function () {
+    $('div.to-fade-in').fadeIn(1000).removeClass('title-to-fade-in');
     $('div.title-to-fade-in').fadeIn(1000).removeClass('title-to-fade-in');
     $('div.subtitle-to-fade-in').fadeIn(3000).removeClass('subtitle-to-fade-in');
 
