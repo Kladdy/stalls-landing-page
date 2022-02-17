@@ -1,0 +1,83 @@
+//- template.pug
+extends layout.pug
+
+block head
+    title Boxplats - Stall Stjärnholm 
+    meta(name='description', content='DESCRIPTION')
+
+block content
+    include masthead-small
+
+    div(class="to-fade-in")
+        // Boxplats
+        section.testimonials.text-center.text-white
+            .container
+                h1.mb-5 Boxplats
+                p.lead
+                    | Vi har just nu ingen ledig stallplats, men hör gärna av dig vid intresse för framtida ledig box. Se #[a(href="kontakt.html") Kontakt] för kontaktinformation.
+
+        // Njutbar plats på jorden
+        section.showcase.text-white
+            .container
+                .container-fluid.p-0
+                    .row.g-0
+                        .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/boxplats/stallbild_baksida.jpg');")
+                        .col-lg-6.order-lg-1.my-auto.showcase-text
+                            h2 Njutbar plats på jorden
+                            p.lead.mb-0
+                                | Stall Stjärnholm är ett mycket vackert och gemytligt stall. Vi har 11 boxplatser, med 7 inackorderade hyresgäster.
+                    .row.g-0
+                            .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/boxplats/stallbild_tradgard.jpg');")
+                            .col-lg-6.my-auto.showcase-text
+                                h2 Ett stall att trivas i
+                                p.lead.mb-0
+                                    | Trivsel för häst och människa är i centrum. Man spenderar så mycket av sin lediga tid med hästen och vi vill att stallet ska vara en återhämtningsplats för energi och glädje.
+
+        section.testimonials.text-center.text-white
+            .container
+                // Stallet och läget
+                section.features-icons
+                    .container
+                        h3.mb-4 Stallet &amp; läget
+                        p.lead.mb-3.pb-3
+                            | Läget kan inte bli bättre! Stallet är beläget 500 meter från BRK med 2 uppvärmda ridhus, och ridstig finns hela vägen fram.
+                        .row.justify-content-around
+                            .col-lg-3
+                                .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                                    .features-icons-icon.d-flex
+                                        i(style="font-size: 70").bi.bi-signpost-2.m-auto.text-primary
+                                    h4 Tillgänglighet
+                                    p.lead
+                                        | Direkt anslutning till Åbergets fina rid- och körslingor från gården, utan att behöva passera över bilväg.
+                            .col-lg-3
+                                .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                                    .features-icons-icon.d-flex
+                                        i(style="font-size: 70").far.fa-thumbs-up.m-auto.text-primary
+                                    h4 Kvalitet
+                                    p.lead 
+                                        | Hästvänligt stall av hög kvalitet. Högt i tak, ljust, bra ventilation, fina vinterhagar med träd som skyddar mot vind och rusk. Höbord. Stora sommarhagar. Longervolt på gården. Spolspilta i stallet.
+                            .col-lg-3
+                                .features-icons-item.mx-auto.mb-0.mb-lg-3
+                                    .features-icons-icon.d-flex
+                                        i(style="font-size: 70").fas.fa-sink.m-auto.text-primary
+                                    h4 Faciliteter
+                                    p.lead
+                                        | Fina faciliteter för hästägaren. Omklädningsrum med skåp för ombyte, dusch. Stort fikarum med kyl, frys, mikrovågsugn och matplats.  
+                            .col-lg-3
+                                .features-icons-item.mx-auto.mb-0.mb-lg-3
+                                    .features-icons-icon.d-flex
+                                        i(style="font-size: 70").fas.fa-apple-alt.m-auto.text-primary
+                                    h4 Fodring
+                                    p.lead
+                                        | Ca 1 morgonfodring, 1 lunchfodring och 1 kvällsfodring per vecka.
+
+
+                //- h3.mb-4 Perfekt läge
+                //- ul.mb-2
+                //- p
+                //-     li 
+                //-     li 
+                //-     li 
+                //-     li 
+                //-     li 
+                //-     li 
