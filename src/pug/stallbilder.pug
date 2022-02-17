@@ -35,14 +35,14 @@ block content
                     // Check if index is odd or even, to alternate between the two sides
                     if index % 2
                         .row.g-0
-                            .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
+                            .col-lg-6.order-lg-2.text-white.shadow-1-strong.rounded.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
                             .col-lg-6.order-lg-1.my-auto.showcase-text
                                 h3= image[0]
                                 if image[1] != null
                                     p.lead.mb-0= image[1]
                     else
                         .row.g-0
-                            .col-lg-6.text-white.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
+                            .col-lg-6.text-white.shadow-1-strong.rounded.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
                             .col-lg-6.my-auto.showcase-text
                                 h3= image[0]
                                 if image[1] != null
