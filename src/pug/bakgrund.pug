@@ -17,15 +17,16 @@ block content
                 p.lead.mb-5
                     | En berättelse om bakgrunden till Helenas hästverksamhet
 
-                section.showcase.text-white.mb-5
-                    .container-fluid.p-0
-                        .row.my-auto
-                            .col-lg-4 
-                                img(src="assets/img/bakgrund/3ars008_2.jpg")
-                            .col-lg-4 
-                                img(src="assets/img/bakgrund/Landcruiserenbild3ars.jpg")
-                            .col-lg-4 
-                                img(src="assets/img/bakgrund/IMG_5336.jpg")
+                // Gallery
+                section.showcase.text-white
+                    .container-fluid.px-2
+                        .row.g-0
+                            .col-lg-4.col-md-12.mb-4.mb-lg-0.px-2
+                                img.w-100.shadow-1-strong.rounded.mb-4(src="assets/img/bakgrund/3ars008_2.jpg")
+                            .col-lg-4.mb-4.mb-lg-0.px-2
+                                img.w-100.shadow-1-strong.rounded.mb-4(src="assets/img/bakgrund/Landcruiserenbild3ars.jpg")
+                            .col-lg-4.mb-4.mb-lg-0.px-2
+                                img.shadow-1-strong.rounded.mb-4(src="assets/img/bakgrund/IMG_5336.jpg" height="80%")
 
                 - current_year = (new Date()).getFullYear();
                 - helena_horse_years = (current_year - 1974).toString().slice(-2)
@@ -38,7 +39,7 @@ block content
                 p.lead.mb-5
                     | År 1974 började jag min ridbana hos Bränna-Karin, där jag också var barn- och ungdomsridärare under några år, samt red och tävlade lokalt/regionalt. Foto nedan tillhör Åsa Roosqvist och är taget kring 1981, Bränna-Karin till höger och jag går i vattnet :)
 
-                img.mb-5(src="assets/img/bakgrund/170769_491198338345_5372938_o.jpg")
+                img.shadow-1-strong.rounded.mb-4(src="assets/img/bakgrund/170769_491198338345_5372938_o.jpg")
 
                 h2 90-talet 
                 p.lead.mb-3

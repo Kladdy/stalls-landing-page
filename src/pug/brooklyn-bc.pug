@@ -1,0 +1,33 @@
+//- template.pug
+extends layout.pug
+
+block head
+    title Brooklyn BC - Stall Stjärnholm 
+    meta(name='description', content='DESCRIPTION')
+
+block content
+    include masthead-small
+
+    // Content to fade in
+    div(class="to-fade-in")
+        // Title
+        section.testimonials.text-center.text-white
+            .container
+                h1.mb-5 Brooklyn BC
+                p.lead
+                    | Född 2010#[br]Balougraph - Cap Calando#[br]#[b Uppfödare:] Stall BC#[br]#[b Ägare:] Såld till Lotta Hyttinen, Finland#[br]#[b Ryttare på bild:] Sara Nilsson
+
+
+        // Gallery
+        section.showcase.text-white
+            .container-fluid.px-2
+                .row.g-0
+                    .col-lg-4.col-md-12.mb-4.mb-lg-0.px-2
+                        each val in [1, 4, 7, 10, 13, 16]
+                            img.w-100.shadow-1-strong.rounded.mb-4(src="assets/img/brooklyn-bc/" + val.toString() + ".jpg")
+                    .col-lg-4.mb-4.mb-lg-0.px-2
+                        each val in [2, 5, 8, 11, 14]
+                            img.w-100.shadow-1-strong.rounded.mb-4(src="assets/img/brooklyn-bc/" + val.toString() + ".jpg")
+                    .col-lg-4.mb-4.mb-lg-0.px-2
+                        each val in [3, 6, 9, 12, 15]
+                            img.w-100.shadow-1-strong.rounded.mb-4(src="assets/img/brooklyn-bc/" + val.toString() + ".jpg")
