@@ -1,8 +1,8 @@
-//- template.pug
+//- sommarminnen.pug
 extends layout.pug
 
 block head
-    title TEMPLATE - Stall Stjärnholm 
+    title Sommarminnen - Stall Stjärnholm 
     meta(name='description', content='DESCRIPTION')
 
 block content
@@ -13,4 +13,17 @@ block content
         // Title
         section.testimonials.text-center.text-white
             .container
-                h1.mb-5 TITLE
+                h1.mb-5 Sommarminnnen
+                p.lead
+                    | Bildserie av Anders Blomqvist, sommaren 2014
+
+        // Image Showcases
+        section.showcase.text-white
+            .container-fluid.p-0
+                .row.g-0
+                    .col-lg-12.text-white.showcase-img(style="background-image: url('assets/img/sommarminnen/head.jpg');")
+                // Check if index is odd or even, to skip every other one
+                each val in [1, 3, 5, 7, 9, 11]
+                    .row.g-0
+                        .col-lg-6.order-lg-1.text-white.showcase-img(style="background-image: url('assets/img/sommarminnen/" + val.toString() + ".jpg');")
+                        .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('assets/img/sommarminnen/" + (val+1).toString() +  ".jpg');")
