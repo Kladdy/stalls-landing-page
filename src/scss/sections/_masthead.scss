@@ -5,7 +5,11 @@
 header.masthead {
     position: relative;
     background-color: $gray-800;
-    background: url('../assets/img/bg-masthead.jpg') no-repeat center center;
+    background: url('../assets/img/bg-masthead.jpg');
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: 80% 50%;
+    background-position: center center; 
     background-size: cover;
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -40,6 +44,22 @@ header.masthead {
         h4 {
             padding-bottom: 30rem;
         }
+    }
+
+    @media (min-width: 1200px) {
+        // padding-top: 5rem;
+        // padding-bottom: 5rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h4 {
+            padding-bottom: 40rem;
+        }
+
+        background: url('../assets/img/bg-masthead-small.jpg');
+        background-position: center center; 
     }
 }
 
