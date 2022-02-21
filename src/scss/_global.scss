@@ -33,6 +33,15 @@ a.nav-link {
     color: #F8F8F8
 }
 
+a.nav-link:hover {
+    color: #ff7af6 !important;
+}
+
+a.nav-link.active:hover {
+    color: #F8F8F8 !important;
+}
+
+
 div.to-fade-in {
     display: none
 }
@@ -43,4 +52,9 @@ div.title-to-fade-in {
 
 div.subtitle-to-fade-in {
     display: none
+}
+
+// Text for parents, birth year...
+p.text-ef {
+    color: #f3aee5 !important
 }
