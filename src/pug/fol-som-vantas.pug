@@ -10,6 +10,10 @@ block head
 block content
     include masthead-small
 
+    - var foal_list = "⚜️ Main Chaccotina SH e. Chacco Blue - Clinton I - Irco Marco  ⚜️ Main Balouelle SH e. Baloubet du Rouet - Clinton I - Irco Marco 💕såld till Kivla Sporthorses💕 ⚜️ Main Compassion SH e. Conthargos - Clinton I - Irco Marco ⭐️Till salu⭐️  ⚜️ Main Avenue SH e. Heartbeat - Cabachon - Irco Marco ⭐️Till salu⭐️  ⚜️ Gold Rose SH e. Kentucky vant Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet 💕såld till Ann-Louise Karlsson💕 ⚜️ Top Notch SH e. Tangelo v/d Zuuthoeve - For Pleasure - Maloubet de Pleville ⭐️Till salu⭐️  ⚜️ Chacconova SH e. Chacootino PS - Diarado - Cardento, 💕såld till Ann-Louise Karlsson💕"
+    - var foal_list_split = foal_list.split(" ")
+    - var foal_list_with_br_between = foal_list_split.join("<br>")
+
     // Content to fade in
     div(class="to-fade-in")
         // Title
@@ -18,7 +22,6 @@ block content
                 h1.mb-5 Föl 2022
                 p.lead.mb-3
                     | Följ oss gärna på Facebook, #[a(href='https://www.facebook.com/StallStjarnholm/' target="_blank") Stall Stjärnholm], för färska bilder och filmer.
-                p.lead.mb-3
-                    | ⚜️ Main Chaccotina SH e. Chacco Blue - Clinton I - Irco Marco #[br]⚜️ Main Balouelle SH e. Baloubet du Rouet - Clinton I - Irco Marco (såld).#[br]⚜️ Main Compassion SH e. Conthargos - Clinton I - Irco Marco ⭐️Till salu⭐️#[br]⚜️ Main Avenue SH e. Heartbeat - Cabachon - Irco Marco ⭐️Till salu⭐️#[br]⚜️ Stoföl e. Kentucky vant Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet ⭐️Till salu⭐️#[br]⚜️ Top Notch SH e. Tangelo v/d Zuuthoeve - For Pleasure - Maloubet de Pleville ⭐️Till salu⭐️#[br]⚜️ Föds i mitten av juli: e. Chacootino PS - Diarado - Cardento ⭐️Till salu⭐️
+                p.lead.mb-3 !{foal_list_with_br_between}
                 p.lead.mb-5
                     | Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade direkt då de är födda. Se #[a(href="kontakt.html") Kontakt] för kontaktinformation.
