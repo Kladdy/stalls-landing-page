@@ -4,13 +4,13 @@ extends layout.pug
 block head
     //- title Föl som väntas 2022 - Stall Stjärnholm 
     //- meta(name='description', content='En lista på de föl som väntas under året. Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade direkt då de är födda.')
-    title Föl 2023 - Stall Stjärnholm 
+    title Föl 2022 - Stall Stjärnholm 
     meta(name='description', content='En lista på de föl som fötts under året. Kontakta oss gärna vid intresse av något av fölen.')
 
 block content
     include masthead-small
 
-    - var foal_list = "⚜️ e. Cornet Obolensky - Clinton I - Irco Marco ⚜️ e. Emerald - Nabab de Reve - Mr Blue - Baloubet du Rouet ⚜️ e. Hardrock Z - For Pleasure - Maloubet de Pleville ⚜️ e. Heartbeat - Corporal VDL - Landlord - Irco Mena"
+    - var foal_list = "⚜️ Main Chaccotina SH e. Chacco Blue - Clinton I - Irco Marco  ⚜️ Main Balouelle SH e. Baloubet du Rouet - Clinton I - Irco Marco 💕såld till Kivla Sporthorses💕 ⚜️ Main Compassion SH e. Conthargos - Clinton I - Irco Marco ⭐️SÅLD⭐️  ⚜️ Main Avenue SH e. Heartbeat - Cabachon - Irco Marco ⭐️SÅLD⭐️  ⚜️ Gold Rose SH e. Kentucky vant Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet 💕såld till Ann-louise Karlsson💕 ⚜️ Top Notch SH e. Tangelo v/d Zuuthoeve - For Pleasure - Maloubet de Pleville ⭐️Till salu⭐️  ⚜️ Chacconova SH e. Chacootino PS - Diarado - Cardento 💕såld till Ann-louise Karlsson💕"
     - var foal_list_split = foal_list.split(" ")
     - var foal_list_with_br_between = foal_list_split.join("<br>")
 
@@ -19,7 +19,7 @@ block content
         // Title
         section.testimonials.text-center.text-white
             .container
-                h1.mb-5 Föl 2023
+                h1.mb-5 Föl 2022
                 p.lead.mb-3
                     | Följ oss gärna på Facebook, #[a(href='https://www.facebook.com/StallStjarnholm/' target="_blank") Stall Stjärnholm], för färska bilder och filmer.
                 p.lead.mb-3 !{foal_list_with_br_between}
