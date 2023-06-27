@@ -10,9 +10,10 @@ block head
 block content
     include masthead-small
 
-    - var foal_list = "⚜️ e. Cornet Obolensky - Clinton I - Irco Marco ⚜️ e. Emerald - Nabab de Reve - Mr Blue - Baloubet du Rouet ⚜️ e. Hardrock Z - For Pleasure - Maloubet de Pleville ⚜️ e. Heartbeat - Corporal VDL - Landlord - Irco Mena"
+    //- - var foal_list = "⚜️ e. Cornet Obolensky - Clinton I - Irco Marco ⚜️ e. Emerald - Nabab de Reve - Mr Blue - Baloubet du Rouet ⚜️ e. Hardrock Z - For Pleasure - Maloubet de Pleville ⚜️ e. Heartbeat - Corporal VDL - Landlord - Irco Mena"
+    - var foal_list = "⚜️ Main Cardashian SH (sto) e. Cornet Obolensky - Clinton I - Irco Marco<br>Blivande skimmel. ⚜️ Gold Edition SH (hingst) e. Emerald van't Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet - Chin Chin<br>Fux med skjuten stjärn och 4 vita strumpor. ⚜️ Lily Bollinger SH (sto) e. Heartbeat - Corporal VDL - Landlord - Irco Mena<br>Blivande skimmel. ⚜️ Hingstföl e. Hardrock Z - For Pleasure - Maloubet de Pleville<br>Brun med stjärn, 4 vita jämna strumpor, vit vacker bukfläck under buken från For Pleasure!"
     - var foal_list_split = foal_list.split(" ")
-    - var foal_list_with_br_between = foal_list_split.join("<br>")
+    - var foal_list_with_br_between = foal_list_split.join("<br><br>")
 
     // Content to fade in
     div(class="to-fade-in")
