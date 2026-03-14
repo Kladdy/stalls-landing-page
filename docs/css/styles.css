@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Landing Page v6.0.4 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2025 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
 */
 /*!
@@ -11356,7 +11356,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #593a5c;
+  background-color: #343a40;
   height: 100%;
   width: 100%;
   top: 0;
@@ -11401,7 +11401,7 @@ header.masthead-small {
 header.masthead-small:before {
   content: "";
   position: absolute;
-  background-color: #593a5c;
+  background-color: #343a40;
   height: 100%;
   width: 100%;
   top: 0;

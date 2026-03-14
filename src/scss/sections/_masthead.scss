@@ -17,7 +17,7 @@ header.masthead {
     &:before {
         content: '';
         position: absolute;
-        background-color: mix($gray-900, $primary, 75%);
+        background-color: $gray-800;
         height: 100%;
         width: 100%;
         top: 0;
@@ -76,7 +76,7 @@ header.masthead-small {
     &:before {
         content: '';
         position: absolute;
-        background-color: mix($gray-900, $primary, 75%);
+        background-color: $gray-800;
         height: 100%;
         width: 100%;
         top: 0;
