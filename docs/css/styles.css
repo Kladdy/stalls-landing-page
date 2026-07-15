@@ -11385,7 +11385,7 @@ header.masthead .homepage-hero-copy {
 }
 @media (min-width: 1200px) {
   header.masthead {
-    background: url("../assets/img/ny_framsida-alt2.JPG")  no-repeat ;
+    background: url("../assets/img/ny_framsida-alt2.JPG") no-repeat fill;
     background-position: center center;
   }
   header.masthead h1, header.masthead .h1 {
