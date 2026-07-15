@@ -11369,6 +11369,9 @@ header.masthead h1, header.masthead .h1 {
 header.masthead h4, header.masthead .h4 {
   padding-bottom: 15rem;
 }
+header.masthead h6, header.masthead .h6 {
+  padding-bottom: 15rem;
+}
 header.masthead .homepage-hero-copy {
   display: inline-block;
 }
