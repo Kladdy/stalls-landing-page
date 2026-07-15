@@ -11383,7 +11383,8 @@ header.masthead .homepage-hero-copy {
     padding-bottom: 30rem;
   }
   header.masthead .homepage-hero-copy {
-    padding-left: clamp(2rem, 24vw, 20rem);
+    padding-left: clamp(2rem, 48vw, 40rem);
+    text-wrap: nowrap;
   }
 }
 @media (min-width: 1200px) {
