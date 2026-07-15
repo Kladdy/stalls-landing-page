@@ -11346,7 +11346,7 @@ p.text-ef {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg");
+  background: url("../assets/img/ny_framsida.JPG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11369,6 +11369,9 @@ header.masthead h1, header.masthead .h1 {
 header.masthead h4, header.masthead .h4 {
   padding-bottom: 15rem;
 }
+header.masthead .homepage-hero-copy {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 4rem;
@@ -11376,10 +11379,13 @@ header.masthead h4, header.masthead .h4 {
   header.masthead h4, header.masthead .h4 {
     padding-bottom: 30rem;
   }
+  header.masthead .homepage-hero-copy {
+    padding-left: clamp(2rem, 24vw, 20rem);
+  }
 }
 @media (min-width: 1200px) {
   header.masthead {
-    background: url("../assets/img/bg-masthead-alt2.jpg");
+    background: url("../assets/img/ny_framsida-alt2.JPG");
     background-position: center center;
   }
   header.masthead h1, header.masthead .h1 {
@@ -11388,13 +11394,19 @@ header.masthead h4, header.masthead .h4 {
   header.masthead h4, header.masthead .h4 {
     padding-bottom: 40rem;
   }
+  header.masthead .homepage-hero-copy {
+    padding-left: clamp(2rem, 24vw, 20rem);
+  }
 }
 
 header.masthead-small {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead-small.jpg") no-repeat center center;
+  background: url("../assets/img/undertitel_bild.png") no-repeat center center;
   background-size: cover;
+  min-height: 32rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
@@ -11412,14 +11424,16 @@ header.masthead-small h1, header.masthead-small .h1 {
   font-size: 3rem;
 }
 header.masthead-small h4, header.masthead-small .h4 {
-  padding-bottom: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   header.masthead-small h1, header.masthead-small .h1 {
     font-size: 4rem;
   }
   header.masthead-small h4, header.masthead-small .h4 {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -11439,6 +11453,9 @@ header.masthead-small h4, header.masthead-small .h4 {
     background-size: cover;
   }
 }
+.showcase .showcase-img-right {
+  background-position: right center;
+}
 
 .testimonials {
   padding-top: 7rem;
@@ -11454,7 +11471,7 @@ header.masthead-small h4, header.masthead-small .h4 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/ny_framsida.JPG") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;

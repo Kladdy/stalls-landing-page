@@ -13,9 +13,9 @@ block content
         // Title
         section.testimonials.text-center.text-white
             .container
-                h1.mb-5 Stallbilder
+                h1.mb-5 💓 Vår nya gård sedan 2024 i Enköping 💓
                 p.lead
-                    | 💓 Bilder på vår nya gård kommer inom kort. Bildens nedan visar hästgården vi ägde mellan december 2012 till juni 2024 💓
+                    | En fantastisk hästgård med 12-14 boxar i stora stallet, 2 boxar i gäststallet, ridbana, vinterhagar med vindskydd, stora sommarhagar och en ny skogshage på gång 2027.
 
         
 
@@ -23,28 +23,23 @@ block content
         section.showcase.text-white
             .container-fluid.p-0
                 -
-                    var image_list = [["Longervolt", null, "longervolt.jpg"],
-                            ["Boxar", null, "boxar.jpg"],
-                            ["Framsida av stallet", null, "framsida.jpg"],
-                            ["Uppbindningsplats", "Spolspilta finns också", "uppbindningsplats.jpg"],
-                            ["Täckeshängare i torkrum", null, "torkrum.jpg"],
-                            ["Entrén till två vinterhagar", "4 av 5 hagar har gemensamt insläppsområde direkt på kortsidan av stallet", "vinterhagar.jpg"],
-                            ["Sommarhagar", null, "sommarhagar2.jpg"],
-                            ["Höhus", null, "hohus.jpg"],
-                            ["Stallet vintertid", null, "stallet_vinter.jpg"],
+                    var image_list = [["Gårdsbild", null, "gårdsbild.JPG"],     
+                            ["Gårdsplan", null, "gårdsplan.webp"],
+                            ["Ridbana", null, "ridbana.webp"],
+                            ["Flygbild", null, "flygbild.webp"],
                             ]
                 each image, index in image_list
                     // Check if index is odd or even, to alternate between the two sides
                     if index % 2
                         .row.g-0
-                            .col-lg-6.order-lg-2.text-white.shadow-1-strong.rounded.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
+                            .col-lg-6.order-lg-2.text-white.shadow-1-strong.rounded.showcase-img(class=index >= 2 ? 'showcase-img-right' : '', style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
                             .col-lg-6.order-lg-1.my-auto.showcase-text
                                 h3= image[0]
                                 if image[1] != null
                                     p.lead.mb-0= image[1]
                     else
                         .row.g-0
-                            .col-lg-6.text-white.shadow-1-strong.rounded.showcase-img(style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
+                            .col-lg-6.text-white.shadow-1-strong.rounded.showcase-img(class=index >= 2 ? 'showcase-img-right' : '', style="background-image: url('assets/img/stallbilder/" + image[2] + "');")
                             .col-lg-6.my-auto.showcase-text
                                 h3= image[0]
                                 if image[1] != null
