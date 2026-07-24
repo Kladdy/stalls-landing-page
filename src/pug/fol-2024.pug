@@ -1,27 +1,0 @@
-//- fol-som-vantas.pug
-extends layout.pug
-
-block head
-    title Föl som väntas 2024 - Stall Stjärnholm 
-    meta(name='description', content='En lista på de föl som väntas under året. Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade direkt då de är födda.')
-    //- title Föl 2024 - Stall Stjärnholm 
-    //- meta(name='description', content='En lista på de föl som fötts under året. Kontakta oss gärna vid intresse av något av fölen.')
-
-block content
-    include masthead-small
-
-    - var foal_list = "⚜️ Fabergé SH e. For Pleasure - Clinton I 💕såld till Torbjörn Bredenlöw💕  ⚜️ Chacco's Icon SH e. Chacco Blue - Clinton I ⭐️ TILL SALU ⭐️  ⚜️ Balmain SH e. Baloubet du Rouet - Clinton I ⭐️ TILL SALU ⭐️    u. MAIN HILLARY (1) som har flertalet syskon i svår hoppning som bl a gått världscupen och nationshoppningar.  Main Hillarys fantastiska möderne med prestationer kan ses på <a href='https://www.horsetelex.com/horses/pedigree/1807559/main-hillary'>Horsetelex</a>.    ⚜️ Emperatrice SH e. Emerald van't Ruytershof - Cornet Obolensky. Barnbarnsbarn till Butterfly Flip 💓  ⚜️ Chacco's Baloutina SH e. Chacoon Blue - Baloubet du Rouet - Cornet Obolensky - Diamant de Semilly. Barnbarnsbarn till Gatoucha van't Roosakker 💓"
-    - var foal_list_split = foal_list.split(" ")
-    - var foal_list_with_br_between = foal_list_split.join("<br>")
-
-    // Content to fade in
-    div(class="to-fade-in")
-        // Title
-        section.testimonials.text-center.text-white
-            .container
-                h1.mb-5 Föl 2024
-                p.lead.mb-3
-                    | Följ oss gärna på Facebook, #[a(href='https://www.facebook.com/StallStjarnholm/' target="_blank") Stall Stjärnholm], för färska bilder och filmer.
-                p.lead.mb-3 !{foal_list_with_br_between}
-                p.lead.mb-5
-                    | Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade. Se #[a(href="kontakt.html") Kontakt] för kontaktinformation.

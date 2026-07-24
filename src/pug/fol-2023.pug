@@ -1,29 +1,0 @@
-//- fol-som-vantas.pug
-extends layout.pug
-
-block head
-    //- title Föl som väntas 2022 - Stall Stjärnholm 
-    //- meta(name='description', content='En lista på de föl som väntas under året. Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade direkt då de är födda.')
-    title Föl 2023 - Stall Stjärnholm 
-    meta(name='description', content='En lista på de föl som fötts under året. Kontakta oss gärna vid intresse av något av fölen.')
-
-block content
-    include masthead-small
-
-    //- - var foal_list = "⚜️ e. Cornet Obolensky - Clinton I - Irco Marco ⚜️ e. Emerald - Nabab de Reve - Mr Blue - Baloubet du Rouet ⚜️ e. Hardrock Z - For Pleasure - Maloubet de Pleville ⚜️ e. Heartbeat - Corporal VDL - Landlord - Irco Mena"
-    //- - var foal_list = "⚜️ Main Cardashian SH (sto) e. Cornet Obolensky - Clinton I - Irco Marco<br>Blivande skimmel. ⚜️ Gold Edition SH (hingst) e. Emerald van't Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet - Chin Chin<br>Fux med skjuten stjärn och 4 vita strumpor. ⚜️ Lily Bollinger SH (sto) e. Heartbeat - Corporal VDL - Landlord - Irco Mena<br>Blivande skimmel. ⚜️ Hingstföl e. Hardrock Z - For Pleasure - Maloubet de Pleville<br>Brun med stjärn, 4 vita jämna strumpor, vit vacker bukfläck under buken från For Pleasure!"
-    - var foal_list = "⚜️ Main Cardashian SH (sto) e. Cornet Obolensky - Clinton I - Irco Marco<br>Blivande skimmel.<br>🌸 SÅLD till Ann-louise Karlsson 🌸 ⚜️ Gold Edition SH (hingst) e. Emerald van't Ruytershof - Nabab de Reve - Mr Blue - Baloubet du Rouet - Chin Chin<br>Fux med skjuten stjärn och 4 vita strumpor. ⚜️ Lily Bollinger SH (sto) e. Heartbeat - Corporal VDL - Landlord - Irco Mena<br>Blivande skimmel. ⚜️ Hingstföl e. Hardrock Z - For Pleasure - Maloubet de Pleville<br>Brun med stjärn, 4 vita jämna strumpor, vit vacker bukfläck under buken från For Pleasure!"
-    - var foal_list_split = foal_list.split(" ")
-    - var foal_list_with_br_between = foal_list_split.join("<br><br>")
-
-    // Content to fade in
-    div(class="to-fade-in")
-        // Title
-        section.testimonials.text-center.text-white
-            .container
-                h1.mb-5 Föl 2023
-                p.lead.mb-3
-                    | Följ oss gärna på Facebook, #[a(href='https://www.facebook.com/StallStjarnholm/' target="_blank") Stall Stjärnholm], för färska bilder och filmer.
-                p.lead.mb-3 !{foal_list_with_br_between}
-                p.lead.mb-5
-                    | Kontakta oss gärna vid intresse av något av fölen, så håller vi er uppdaterade. Se #[a(href="kontakt.html") Kontakt] för kontaktinformation.
